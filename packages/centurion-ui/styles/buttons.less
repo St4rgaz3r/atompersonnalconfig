@@ -1,0 +1,78 @@
+@import "ui-variables";
+@import "ui-mixins";
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-background (@color, @hover-color, @selected-color, @text-color) {
+  color: @text-color-highlight;
+  background-color: @button-background-color;
+
+  &:hover {
+    color: @text-color-highlight;
+    background-color: @button-background-color-hover;
+  }
+  &.selected {
+    color: @text-color-highlight;
+    background-color: @button-background-color-selected;
+    &:hover {
+        background-color: @button-background-color-hover;
+    }
+  }
+}
+
+.btn-variant (@color) {
+  @bg: darken(@color, 10%);
+  @hover: @color;
+  @selected: @color;
+  .btn-background(@bg, @hover, @selected, @text-color-highlight);
+}
+
+.btn {
+  height: @button-height;
+
+  &:focus {
+    color: @text-color-highlight;
+  }
+
+  .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
+}
+
+.btn.btn-primary {
+  .btn-variant(@background-color-info);
+}
+.btn.btn-info {
+  .btn-variant(@background-color-info);
+}
+.btn.btn-success {
+  .btn-variant(@background-color-success);
+}
+.btn.btn-warning {
+  .btn-variant(@background-color-warning);
+}
+.btn.btn-error {
+  .btn-variant(@background-color-error);
+}
+
+.caret {
+  border-top: 5px solid #fff;
+  margin-top: -1px;
+}
+
+.btn-group {
+  .btn {
+    border: none;
+    border-radius: 0px;
+
+    &:first-child {
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+  }
+}

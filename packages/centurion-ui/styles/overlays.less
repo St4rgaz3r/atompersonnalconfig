@@ -1,0 +1,52 @@
+@import "ui-variables";
+
+.overlay {
+  background-color: @overlay-background-color;
+  border: none;
+  box-shadow: 0 0 @overlay-box-shadow-size @base-border-color;
+  color: @text-color;
+  margin-top: @tab-height;
+  padding: @overlay-padding;
+  padding-top: 0px;
+  
+  .editor.mini {
+    margin-bottom: 0px;
+  }
+
+  .key-binding {
+    background: none;
+    -webkit-box-shadow: none;
+  }
+
+  h1 {
+    margin-top: 5px;
+  }
+
+  .select-list ol.list-group,
+  &.select-list ol.list-group {
+    background-color: @input-background-color;
+    border-top: @overlay-list-border-top solid @tool-panel-background-color;
+    margin: 0;
+
+    li {
+      padding: @overlay-list-padding;
+
+      &.two-lines { padding: @component-padding/2 @component-padding; }
+
+      .status.icon {
+        float: right;
+        margin-left: @component-icon-padding;
+        &:before {
+          margin-right: 0;
+        }
+      }
+
+      &.selected {
+        background-color: @overlay-selected-item-background-color;
+        .status.icon {
+          color: @text-color-selected;
+        }
+      }
+    }
+  }
+}

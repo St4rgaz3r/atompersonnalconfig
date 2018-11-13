@@ -1,0 +1,93 @@
+@import "ui-variables";
+
+.tab-bar {
+  height: @tab-height;
+
+  .tab {
+    background-color: @tab-background-color;
+    position: relative;
+    height: @tab-height;
+    line-height: @tab-height;
+    color: @text-color;
+    padding-left: @tab-left-padding;
+    transition: color .1s ease-in;
+    border: none;
+
+    &.modified {
+      .close-icon {
+          display: block;
+      }
+    }
+
+    .close-icon {
+      display: none;
+      line-height: @tab-height;
+      z-index: 3;
+
+      &:before {
+        font-size: @tab-close-font-size;
+      }
+
+      &:hover:before {
+        color: @tab-close-hover-color;
+      }
+    }
+    &.modified {
+      &:not(:hover) .close-icon {
+        border-color: @modified-icon-color;
+        top: @tab-height/2 - @modified-icon-width/2 + 1px;
+        right: @modified-icon-right-padding;
+        width: @modified-icon-width;
+        height: @modified-icon-width;
+      }
+    }
+
+    &:first-child {
+      padding-left: @tab-left-padding;
+    }
+
+    &:hover {
+      .close-icon {
+          display: block;
+        }
+    }
+  }
+
+  .tab.active {
+    background-color: @tab-active-background-color;
+    z-index: 10;
+    line-height: @tab-height;
+    color: @text-color-highlight;
+    border: none;
+
+    .title{
+      position: relative;
+      top: 1px;
+    }
+
+    .close-icon {
+      display: block;
+      line-height: @tab-height - 1px;
+    }
+
+    &:before {
+      border: none;
+      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
+    }
+  }
+
+  .tab:hover {
+    color: @text-color-highlight;
+  }
+
+  .tab.active:hover .close-icon {
+    color: @text-color-highlight;
+  }
+
+  .placeholder {
+    height: @tab-height;
+    &:after {
+      top: @tab-height;
+    }
+  }
+}

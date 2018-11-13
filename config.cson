@@ -1,0 +1,13 @@
+"*":
+  core:
+    themes: [
+      "one-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    showIndentGuide: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "8879c6d3-1467-4958-86ed-de9d396cdf4e"
+  pigments: {}

@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle apm install file-icons",
+        "command": "apm install file-icons:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "apm install file-icons",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "apm install file-icons:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

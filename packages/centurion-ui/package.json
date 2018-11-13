@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball",
+  "_id": "centurion-ui@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-TDKXKDTgtXANxGXnV3GI//iXJqYVds6HAvtGFNB4+YvOZZI1LysU8rpW1hCTIMLOz1e87fYUUA1Jf4S0aqK1+Q==",
+  "_location": "/centurion-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball",
+  "_shasum": "5c9e807ef1d229d52941135d5817fa3bb1d234d9",
+  "_spec": "https://www.atom.io/api/packages/centurion-ui/versions/0.5.0/tarball",
+  "_where": "C:\\Users\\FOKALS~1\\AppData\\Local\\Temp\\apm-install-dir-1181013-23936-j2bhq4.28jt",
+  "bugs": {
+    "url": "https://github.com/jamesmacfie/centurion-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A dark, clean theme based off the Centurion Sublime theme",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jamesmacfie/centurion-ui#readme",
+  "license": "MIT",
+  "name": "centurion-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesmacfie/centurion-ui.git"
+  },
+  "theme": "ui",
+  "version": "0.5.0"
+}

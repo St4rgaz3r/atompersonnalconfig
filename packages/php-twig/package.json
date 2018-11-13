@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball",
+  "_id": "php-twig@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wtkRN6NYErZbLamjZjh+FzLn9qPzyHFfDkm59rwwsSl5jDUYRtQh4v+CSBF38mJGI5XhKaPuvu5Q/x1oxyPJ1g==",
+  "_location": "/php-twig",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball",
+  "_shasum": "9d746076201b60d979c9f6ac19782cec349ffedf",
+  "_spec": "https://www.atom.io/api/packages/php-twig/versions/4.0.0/tarball",
+  "_where": "C:\\Users\\FOKALS~1\\AppData\\Local\\Temp\\apm-install-dir-1181013-2476-z0si82.o4xi",
+  "bugs": {
+    "url": "https://github.com/reesef/php-twig/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Twig support for Atom.",
+  "engines": {
+    "atom": ">0.10.0"
+  },
+  "homepage": "https://github.com/reesef/php-twig#readme",
+  "license": "MIT",
+  "name": "php-twig",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reesef/php-twig.git"
+  },
+  "version": "4.0.0"
+}

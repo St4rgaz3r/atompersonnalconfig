@@ -1,0 +1,193 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * BASE COLORS
+ * TEXT
+ * TOOL PANEL
+ * FIND PANEL
+ * TREE VIEW
+ * FOCUSABLE PANEL
+ * EDITOR
+ * GIT STATES
+ * BUTTON
+ * OVERLAY
+ * TABS
+ * KEY BINDINGS
+ * INSET
+ * COMPONENTS
+ * SITE COLORS
+ *
+ */
+
+/*------------------------------------*\
+    $BASE COLORS
+\*------------------------------------*/
+
+@app-background-color: #323232;
+
+@base-background-color: lighten(@tool-panel-background-color, 5%);
+@base-border-color: rgba(0, 0, 0, 0.5);
+
+/*------------------------------------*\
+    $TEXT
+\*------------------------------------*/
+
+@font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
+
+@font-size: 13px;
+@text-color: #aaa;
+@text-color-subtle: #555;
+@text-color-highlight: #fff;
+@text-color-selected: @text-color-highlight;
+
+@text-color-info: #5293d8;
+@text-color-success: #60AC7b;
+@text-color-warning: #CF9638;
+@text-color-error: #EB5252;
+
+@text-color-bright: @text-color-success;
+
+/*------------------------------------*\
+    $TOOL PANEL
+\*------------------------------------*/
+
+@tool-panel-background-color: #323232;
+@tool-panel-border-color: #1e1e1e;
+
+/*------------------------------------*\
+    $FIND PANEL
+\*------------------------------------*/
+
+@find-panel-font-size: 11px;
+@find-panel-editor-height: 30px;
+@find-panel-results-count-line-height: 25px;
+
+/*------------------------------------*\
+    $TREE VIEW
+\*------------------------------------*/
+
+@tree-view-font-size: 11px;
+@tree-view-background-color: @tool-panel-background-color;
+@tree-view-border-color: @tool-panel-border-color;
+@tree-view-selected-background-color: #444;
+@tree-view-list-item-height: 20px;
+
+/*------------------------------------*\
+    $FOCUSABLE PANEL
+\*------------------------------------*/
+
+@focusable-panel-background-color: #1e1e1e;
+
+/*------------------------------------*\
+    $EDITOR
+\*------------------------------------*/
+
+@editor-background-color: #272822;
+
+@input-background-color: #1e1e1e;
+@input-border-color: @base-border-color;
+@input-cursor-margin-top: 4px;
+
+/*------------------------------------*\
+    $GIT STATES
+\*------------------------------------*/
+
+@text-color-ignored: @text-color-subtle;
+@text-color-added: #60AC7b;
+@text-color-renamed: #CC4D9E;
+@text-color-modified: #CF9638;
+@text-color-removed: #EB5252;
+
+/*------------------------------------*\
+    $BUTTON
+\*------------------------------------*/
+
+@button-height: 30px;
+@button-background-color: #1e1e1e;
+@button-background-color-hover: #60AC7b;
+@button-background-color-selected: #505050;
+@button-border-color: #1e1e1e;
+
+@background-color-info: #0098ff;
+@background-color-success: #17ca65;
+@background-color-warning: #ffaa2c;
+@background-color-error: #c00;
+@background-color-highlight: rgba(255, 255, 255, 0.07);
+@background-color-selected: #444;
+
+/*------------------------------------*\
+    $OVERLAY
+\*------------------------------------*/
+
+@overlay-background-color: #323232;
+@overlay-border-color: @background-color-highlight;
+@overlay-border-size: 1px;
+@overlay-box-shadow-size: 20px;
+@overlay-list-border-top: 5px;
+@overlay-list-padding: 7px;
+@overlay-padding: 5px;
+@overlay-selected-item-background-color: #60AC7b;
+
+/*------------------------------------*\
+    $TABS
+\*------------------------------------*/
+
+@tab-height: 30px;
+@tab-bar-background-color: #222;
+@tab-bar-border-color: darken(@tab-background-color-active, 10%);
+@tab-background-color: #3c3c3c;
+@tab-active-background-color: #505050;
+@tab-background-color-active: #222;
+@tab-border-color: #484848;
+@tab-left-padding: 15px;
+@tab-close-font-size: 16px;
+@tab-close-hover-color: #be5a4e;
+@modified-icon-width: 10px;
+@modified-icon-right-padding: 12px;
+@modified-icon-color: #5293d8;
+
+/*------------------------------------*\
+    $KEY BINDINGS
+\*------------------------------------*/
+
+@key-binding-background-color: #1e1e1e;
+
+/*------------------------------------*\
+    $PANE/PANEL
+\*------------------------------------*/
+
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color: rgba(0, 0, 0, 0.5);
+
+@panel-heading-background-color: #43484d;
+@panel-heading-border-color: fadein(@base-border-color, 10%);
+
+/*------------------------------------*\
+    $INSET
+\*------------------------------------*/
+
+@inset-panel-background-color: #161719;
+@inset-panel-border-color: @base-border-color;
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+@component-border-radius: 2px;
+
+@disclosure-arrow-size: 12px;
+
+/*------------------------------------*\
+    $SITE COLORS
+\*------------------------------------*/
+
+@ui-site-color-1: @background-color-success; // green
+@ui-site-color-2: @background-color-info; // blue
+@ui-site-color-3: @background-color-warning; // orange
+@ui-site-color-4: #db2ff4; // purple
+@ui-site-color-5: #f5e11d; // yellow
